@@ -177,6 +177,12 @@ p {
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+    .mission p {
+        max-width: 500px;
+    }
+        
+
 .todo {
   margin-top: 0; 
   margin-bottom: 32px;
