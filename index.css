@@ -134,6 +134,9 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
   .hero-text {
     width: 100%;
     background-color: rgba(18, 18, 18,0);
