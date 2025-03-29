@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Codecademy\SC FL\CSS\contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.classList.contains("responsive")) {
+                  x.classList.remove("responsive");
+              } else {
+                  x.classList.add("responsive");
+              }
+          }
+          window.myFunction = myFunction; // Ensure it’s globally accessible
+      });
+      </script>
+      <title>Sunshine State Safe Spaces Events</title>
+  </head>
+  <body>
+<!--Top Nav-->
+    <div class="topnav" id="myTopnav">
+      <a href="C:\Codecademy\SC FL\HTML Home\index.html" class="logo">Home</a>
+      <a href="C:\Codecademy\SC FL\HTML Resources\resources.html">Resources</a>
+      <a href="C:\Codecademy\SC FL\HTML Events\events.html">Events</a>
+      <a href="C:\Codecademy\SC FL\HTML Contact\contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+    </div>
+    <div class="top-c">
+      <div class="image-c">
+        <img src="./Ocean.png" alt="A Florida sunset over the ocean with a pier extending into the water." style="width:100%;">
+      </div>
+      <div class="text-c">
+        <h1>Contact</h1>
+      </div>
+      </div>
+<!--CONTACT-->
+<div class="contact-container">
+
+  <!-- Right side: Form -->
+  <div class="contact-form">
+      <h2>Want to contact us?</h2>
+      <p>Fill out the form below!</p>
+      <form>
+          <label for="name">Your name:</label>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Your email:</label>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Your message:</label>
+          <input type="text" id="message" name="message" required><br>
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+    <!-- Left side: Image -->
+    <div class="contact-image">
+      <img src="./ContactUs.jpg" alt="Contact Us">
+  </div>
+</div>
+
+<!-- Facebook Contact -->
+<div class="FB-contact">
+  <h3><a href="https://www.facebook.com/share/g/1CHRxgQn4o/">Find us on Facebook!</a></h3>
+</div>
+
+<div class="footer">
+  <p>© 2025 Sunshine State Safe Spaces. All rights reserved.</p>
+  <p>Images sourced from <a href="https://unsplash.com/">Unsplash</a> and 
+  <a href="https://affecttheverb.com/disabledandhere/">Disabled and Here</a>.</p>
+  <p>Find us on Facebook at <a href="https://www.facebook.com/share/g/1ACF5iRRSv/">Still COVIDing - Florida</a>.</p>
+</div>
+
+
+</body>
+</html>
