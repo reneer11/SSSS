@@ -2,10 +2,6 @@ html {
     font-size: 16px;
     background-color: #F5F5F2;
     width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
 }
 h1 {
     font-size: 2.25rem;
@@ -37,8 +33,6 @@ p {
     overflow: hidden;
     top: 0;
     left: 0;
-    margin: 0;
-    padding: 0;
   }
   
 .topnav a {
@@ -140,6 +134,9 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
   .hero-text {
     width: 100%;
     background-color: rgba(18, 18, 18,0);
@@ -150,10 +147,12 @@ p {
   .hero-text .button {
     display: none;
   }
+
 }
 
 .mission {
   text-align: center;
+  justify-content: center;
   display: flex; 
   flex-direction: column;
   align-items: center; 
@@ -178,23 +177,11 @@ p {
   margin: 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .mission p {
-    max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .mission p {
-    max-width: 400px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .mission p {
-    max-width: 300px;
-  }
-}
+@media screen and (max-width: 600px) {
+    .mission p {
+        max-width: 500px;
+    }
+        
 
 .todo {
   margin-top: 0; 
@@ -223,8 +210,6 @@ p {
 .flex-cons img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(18, 18, 18, 0.1);
-  max-width: 100%;
-  height: auto;
 }
 
 .flex-cons a {
@@ -257,32 +242,50 @@ p {
   margin-top: 0;
 }
 
-  @media (max-width: 768px) {
-    .flex-cons {
-      flex-direction: column;
-      gap: 20px; 
-    }
-  
-    .events-text, .resources-text, .submit-text {
-      padding: 8px;
-      max-width: 90%;
-    }
+@media screen and (max-width: 950px) {
+  .flex-cons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 32px;
+    padding-bottom: 32px;
   }
   
-  @media (max-width: 480px) {
-    .flex-cons {
-      padding: 0 8px; 
-      gap: 20px;
-    }
-  
-    .events-text, .resources-text, .submit-text {
-      font-size: 0.9rem; 
-      max-width: 100%;
-      margin-top: 2px; 
-      padding: 4px 8px; 
-    }
-  
+  .events {
+    position: relative;
+    text-align: center;
+    color: #F5F5F2;
   }
+  
+  .resources {
+    position: relative;
+    text-align: center;
+    color: #F5F5F2;
+  }
+  
+  .submit {
+    position: relative;
+    text-align: center;
+    color: #F5F5F2;
+  }
+  
+  .events-text, .resources-text, .submit-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: rgba(18, 18, 18,0.7);
+    color: #F5F5F2;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+  }
+  .events-text:hover, .resources-text:hover, .submit-text:hover {
+    text-decoration: underline;
+  }
+}
 
 .footer {
   background-color: #468189;
@@ -322,3 +325,5 @@ p {
     font-size: 0.625rem;
   }
 }
+
+
