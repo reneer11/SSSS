@@ -154,7 +154,6 @@ p {
 
 .mission {
   text-align: center;
-  justify-content: center;
   display: flex; 
   flex-direction: column;
   align-items: center; 
@@ -224,6 +223,8 @@ p {
 .flex-cons img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(18, 18, 18, 0.1);
+  max-width: 100%;
+  height: auto;
 }
 
 .flex-cons a {
@@ -321,7 +322,3 @@ p {
     font-size: 0.625rem;
   }
 }
-
-
-
-
